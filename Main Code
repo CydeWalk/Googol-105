@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Current Time</title>
+		<script type="text/javascript" src="http://balance3e.com/time.js"></script>
+		<script type="text/javascript">
+			function showClock()
+			{
+				var current;
+
+				current = CurrentTime();
+				document.getElementById('outputDiv').innerHTML = 
+				'The current time is: ' + current;
+			}
+		</script>
+	</head>
+
+	<body onload="setInterval('showClock()',1000);">
+		<h2>Current Time</h2>
+		<div id="outputDiv"></div>
+	</body>
+</html>
