@@ -4,8 +4,11 @@
 	<head>
 		<title>The Game of Googol</title>
 <!--We will need RandomInt from random.js and I think we will need ParseArray from arrays.js-->
-		<script type="text/javascript" source="http://balance3e.com/random.js"></script>
-		<script type="text/javascript" source="http://balance3e.com/arrays.js"></script>
+		<script type="text/javascript" src="http://balance3e.com/random.js"></script>
+		<script type="text/javascript" src="http://balance3e.com/arrays.js"></script>
+		<script type="text/javascript">
+		</script>
+		  
 	</head>
 
 
