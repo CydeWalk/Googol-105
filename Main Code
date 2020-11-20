@@ -2,23 +2,20 @@
 
 <html>
 	<head>
-		<title>Current Time</title>
-		<script type="text/javascript" src="http://balance3e.com/time.js"></script>
-		<script type="text/javascript">
-			function showClock()
-			{
-				var current;
-
-				current = CurrentTime();
-				document.getElementById('outputDiv').innerHTML = 
-				'The current time is: ' + current;
-			}
-		</script>
+		<title>The Game of Googol</title>
+<!--We will need RandomInt from random.js and I think we will need ParseArray from arrays.js-->
+		<script type="text/javascript" source="http://balance3e.com/random.js"></script>
+		<script type="text/javascript" source="http://balance3e.com/arrays.js"></script>
 	</head>
 
-	<body onload="setInterval('showClock()',1000);">
-		<h2>Current Time</h2>
-		<div id="outputDiv"></div>
-	</body>
 
+	<body>
+		<h1>Welcome to the Game of Googol!</h1><br>
+		<span style="font-size:32px">How many numbers do you want?</span><br>
+		<span style="font-size:12px">*Note: you can't have more than 100</span><br>
+		<input type="text" id="totalNumbers" size=3><br><br>
+		<input type="button" id="pushToGenerate" value="Begin playing!"
+		onclick="">
+		<hr>
+	</body>
 </html>
