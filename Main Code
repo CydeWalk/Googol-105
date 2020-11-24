@@ -7,18 +7,118 @@
 		<script type="text/javascript" src="http://balance3e.com/random.js"></script>
 		<script type="text/javascript" src="http://balance3e.com/arrays.js"></script>
 		<script type="text/javascript">
+			//We'll use this function to generate all of the numbers.
+			function generateNumbers(numberOfNumbers)
+			{
+				var numbSet
+
+				numbSet=
+			}
+			//Used to make the invisible numbers visible by removing the .invisible class
+			function revealNumber()
+			{
+				var expectedNumber;
+				document.getElementById('choose1').setAttribute("class","unselectable");
+			}
 		</script>
-		  
+		<!--Used for a language called CSS that interacts with the class attribute-->
+		<style>
+		/*makes text with this class invisible*/
+			.invisible {
+				color: transparent;
+			}
+		/*makes text with this class unselectable by users. Without it, users can see what the invisible numbers are by highlighting them*/
+			.unselectable {
+    			-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				-o-user-select: none;
+				user-select: none;
+			}
+		</style>
 	</head>
 
 
 	<body>
 		<h1>Welcome to the Game of Googol!</h1><br>
 		<span style="font-size:32px">How many numbers do you want?</span><br>
-		<span style="font-size:12px">*Note: you can't have more than 100</span><br>
+		<span style="font-size:12px">*Note: you can't have more than 15</span><br>
 		<input type="text" id="totalNumbers" size=3><br><br>
 		<input type="button" id="pushToGenerate" value="Begin playing!"
 		onclick="">
 		<hr>
+		<div id="centerDiv" style="text-align:center">
+		<!--really big table where all of our randomly generated numbers and their buttons will be-->
+			<table width="1905" border="2px">
+				<tr>
+					<td>
+						<!--this will be replaced with a randomly generated number. In the end it should be identical to the other spans-->
+						<span id="Number #1" class="invisible unselectable" >Testing Text</span><br>
+						<input type="button" id="choose1" value="Reveal Number" onclick="revealNumber()">
+					</td>
+					<td>
+						<span id="Number #2"></span><br>
+						<input type="button" id="chooseTwo" value="Reveal Number" onclick="">
+					</td>
+					<td>
+						<span id="Number #3"></span><br>
+						<input type="button" id="chooseThree" value="Reveal Number" onclick="">
+					</td>
+					<td>
+						<span id="Number #4"></span><br>
+						<input type="button" id="chooseFour" value="Reveal Number" onclick="">
+					</td>
+					<td>
+						<span id="Number #5"></span><br>
+						<input type="button" id="chooseFive" value="Reveal Number" onclick="">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span id="Number #6"></span><br>
+						<input type="button" id="chooseSix" value="Reveal Number" onclick="">
+					</td>
+					<td>
+						<span id="Number #7"></span><br>
+						<input type="button" id="chooseSeven" value="Reveal Number" onclick="">
+					</td>
+					<td>
+						<span id="Number #8"></span><br>
+						<input type="button" id="chooseEight" value="Reveal Number" onclick="">
+					</td>
+					<td>
+						<span id="Number #9"></span><br>
+						<input type="button" id="chooseNine" value="Reveal Number" onclick="">
+					</td>
+					<td>
+						<span id="Number #10"></span><br>
+						<input type="button" id="chooseTen" value="Reveal Number" onclick="">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span id="Number #11"></span><br>
+						<input type="button" id="chooseEleven" value="Reveal Number" onclick="">
+					</td>
+					<td>
+						<span id="Number #12"></span><br>
+						<input type="button" id="chooseTwelve" value="Reveal Number" onclick="">
+					</td>
+					<td>
+						<span id="Number #13"></span><br>
+						<input type="button" id="chooseThirteen" value="Reveal Number" onclick="">
+					</td>
+					<td>
+						<span id="Number #14"></span><br>
+						<input type="button" id="chooseFourteen" value="Reveal Number" onclick="">
+					</td>
+					<td>
+						<span id="Number #15"></span><br>
+						<input type="button" id="chooseFifteen" value="Reveal Number" onclick="">
+					</td>
+				</tr>
+			</table>
+		</div>
 	</body>
 </html>
