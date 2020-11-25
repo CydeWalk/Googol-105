@@ -50,7 +50,7 @@
 		<hr>
 		<div id="centerDiv" style="text-align:center">
 		<!--really big table where all of our randomly generated numbers and their buttons will be-->
-			<table width="1905" border="2px">
+			<table width="1000" border="2px">
 				<tr>
 					<td>
 						<!--this will be replaced with a randomly generated number. In the end it should be identical to the other spans-->
