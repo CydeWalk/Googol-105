@@ -42,6 +42,10 @@
 
 	<body>
 		<h1>Welcome to the Game of Googol!</h1><br>
+		<p>The Game of Googol is a guessing game where you will have an amount of different numbers hiddden from you.<br> 
+		The goal is to reveal the highest number in the group of hidden numbers. The catch is, the last number you reveal
+		has to be your "guess." This means that you can't go back to a number you revealed before. If you can successfully
+		reveal the largest number in the group and stop revealing new ones, then you win!</p>
 		<span style="font-size:32px">How many numbers do you want?</span><br>
 		<span style="font-size:12px">*Note: you can't have more than 15</span><br>
 		<input type="text" id="totalNumbers" size=3><br><br>
