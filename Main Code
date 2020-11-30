@@ -8,23 +8,9 @@
 <!--We will need RandomInt from random.js and I think we will need ParseArray from arrays.js-->
 		<script type="text/javascript" src="http://balance3e.com/random.js"></script>
 		<script type="text/javascript" src="http://balance3e.com/arrays.js"></script>
-		<script type="text/javascript">
-			//We'll use this function to generate all of the numbers.
-			function generateNumbers(numberOfNumbers)
-			{
-				var numbSet
-
-				numbSet=
-			}
-			//Used to make the invisible numbers visible by removing the .invisible class
-			function revealNumber()
-			{
-				var expectedNumber;
-				document.getElementById('choose1').setAttribute("class","unselectable");
-			}
-		</script>
+		
 		<!--Used for a language called CSS that interacts with the class attribute-->
-		<style>
+		<style type="text/css">
 		/*makes text with this class invisible*/
 			.invisible {
 				color: transparent;
@@ -39,6 +25,23 @@
 				user-select: none;
 			}
 		</style>
+		<script type="text/javascript">
+			//We'll use this function to generate all of the numbers.
+			function generateNumbers(numberOfNumbers)
+			{
+				var numbSet
+
+				//numbSet=
+			}
+		</script>
+		<script type="text/javascript">
+			//Used to make the invisible numbers visible by removing the .invisible class
+
+			function changeClass(buttonNumber) { 
+				var buttonNumber
+                document.getElementById('Number'+buttonNumber).className = "unselectable"; 
+            } 
+		</script>
 	</head>
 
 
@@ -48,80 +51,76 @@
 		The goal is to reveal the highest number in the group of hidden numbers. The catch is, the last number you reveal
 		has to be your "guess." This means that you can't go back to a number you revealed before. If you can successfully
 		reveal the largest number in the group and stop revealing new ones, then you win!</p>
-		<span style="font-size:32px">How many numbers do you want?</span><br>
-		<span style="font-size:12px">*Note: you can't have more than 15</span><br>
-		<input type="text" id="totalNumbers" size=3><br><br>
-		<input type="button" id="pushToGenerate" value="Begin playing!"
-		onclick="">
 		<hr>
+		<p><input type="button" id="playButton" value="Let's Play!" onclick="generateNumbers()">
 		<div id="centerDiv" style="text-align:center">
 		<!--really big table where all of our randomly generated numbers and their buttons will be-->
 			<table align="center" width="1000" border="2px">
 				<tr>
 					<td>
 						<!--this will be replaced with a randomly generated number. In the end it should be identical to the other spans-->
-						<span id="Number #1" class="invisible unselectable" >Testing Text</span><br>
-						<input type="button" id="choose1" value="Reveal Number" onclick="revealNumber()">
+						<span id="Number1" class="invisible unselectable"></span><br>
+						<input type="button" id="choose1" value="Reveal Number" onclick="changeClass(1)">
 					</td>
 					<td>
-						<span id="Number #2"></span><br>
-						<input type="button" id="chooseTwo" value="Reveal Number" onclick="">
+						<span id="Number2" class="invisible unselectable"></span><br>
+						<input type="button" id="chooseTwo" value="Reveal Number" onclick="changeClass(2)">
 					</td>
 					<td>
-						<span id="Number #3"></span><br>
-						<input type="button" id="chooseThree" value="Reveal Number" onclick="">
+						<span id="Number3" class="invisible unselectable"></span><br>
+						<input type="button" id="chooseThree" value="Reveal Number" onclick="changeClass(3)">
 					</td>
 					<td>
-						<span id="Number #4"></span><br>
-						<input type="button" id="chooseFour" value="Reveal Number" onclick="">
+						<span id="Number4" class="invisible unselectable"></span><br>
+						<input type="button" id="chooseFour" value="Reveal Number" onclick="changeClass(4)">
 					</td>
 					<td>
-						<span id="Number #5"></span><br>
-						<input type="button" id="chooseFive" value="Reveal Number" onclick="">
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<span id="Number #6"></span><br>
-						<input type="button" id="chooseSix" value="Reveal Number" onclick="">
-					</td>
-					<td>
-						<span id="Number #7"></span><br>
-						<input type="button" id="chooseSeven" value="Reveal Number" onclick="">
-					</td>
-					<td>
-						<span id="Number #8"></span><br>
-						<input type="button" id="chooseEight" value="Reveal Number" onclick="">
-					</td>
-					<td>
-						<span id="Number #9"></span><br>
-						<input type="button" id="chooseNine" value="Reveal Number" onclick="">
-					</td>
-					<td>
-						<span id="Number #10"></span><br>
-						<input type="button" id="chooseTen" value="Reveal Number" onclick="">
+						<span id="Number5" class="invisible unselectable"></span><br>
+						<input type="button" id="chooseFive" value="Reveal Number" onclick="changeClass(5)">
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<span id="Number #11"></span><br>
-						<input type="button" id="chooseEleven" value="Reveal Number" onclick="">
+						<span id="Number6" class="invisible unselectable"></span><br>
+						<input type="button" id="chooseSix" value="Reveal Number" onclick="changeClass(6)">
 					</td>
 					<td>
-						<span id="Number #12"></span><br>
-						<input type="button" id="chooseTwelve" value="Reveal Number" onclick="">
+						<span id="Number7" class="invisible unselectable"></span><br>
+						<input type="button" id="chooseSeven" value="Reveal Number" onclick="changeClass(7)">
 					</td>
 					<td>
-						<span id="Number #13"></span><br>
-						<input type="button" id="chooseThirteen" value="Reveal Number" onclick="">
+						<span id="Number8" class="invisible unselectable"></span><br>
+						<input type="button" id="chooseEight" value="Reveal Number" onclick="changeClass(8)">
 					</td>
 					<td>
-						<span id="Number #14"></span><br>
-						<input type="button" id="chooseFourteen" value="Reveal Number" onclick="">
+						<span id="Number9" class="invisible unselectable"></span><br>
+						<input type="button" id="chooseNine" value="Reveal Number" onclick="changeClass(9)">
 					</td>
 					<td>
-						<span id="Number #15"></span><br>
-						<input type="button" id="chooseFifteen" value="Reveal Number" onclick="">
+						<span id="Number10" class="invisible unselectable"></span><br>
+						<input type="button" id="chooseTen" value="Reveal Number" onclick="changeClass(10)">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span id="Number11" class="invisible unselectable"></span><br>
+						<input type="button" id="chooseEleven" value="Reveal Number" onclick="changeClass(11)">
+					</td>
+					<td>
+						<span id="Number12" class="invisible unselectable"></span><br>
+						<input type="button" id="chooseTwelve" value="Reveal Number" onclick="changeClass(12)">
+					</td>
+					<td>
+						<span id="Number13" class="invisible unselectable"></span><br>
+						<input type="button" id="chooseThirteen" value="Reveal Number" onclick="changeClass(13)">
+					</td>
+					<td>
+						<span id="Number14" class="invisible unselectable"></span><br>
+						<input type="button" id="chooseFourteen" value="Reveal Number" onclick="changeClass(14)">
+					</td>
+					<td>
+						<span id="Number15" class="invisible unselectable"></span><br>
+						<input type="button" id="chooseFifteen" value="Reveal Number" onclick="changeClass(15)">
 					</td>
 				</tr>
 			</table>
