@@ -166,7 +166,7 @@
         </tr>
       </table><br>
       <input type="button" id="finishGame" value="Finalize Selection!" style="height:50px;width:150px" onclick="finalizeSelection()"><br><br>
-      <input type="button" id="resetButton" value="Play Again!" onclick="resetGame()">
+      <input type="button" id="resetButton" value="Play Again!" onclick="document.location.reload(true)">
     </div>
   </body>
 </html>
