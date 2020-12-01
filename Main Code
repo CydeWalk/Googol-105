@@ -87,12 +87,11 @@
   </head>
 
 
-  <body>
-    <h1>Welcome to the Game of Googol!</h1><br>
-    <p>The Game of Googol is a guessing game where you will have an amount of different numbers hiddden from you.<br> 
-    The goal is to reveal the highest number in the group of hidden numbers. The catch is, the last number you reveal
-    has to be your "guess." This means that you can't go back to a number you revealed before. If you can successfully
-    reveal the largest number in the group and stop revealing new ones, then you win!</p>
+  <body style="background-color:#ccffe6">
+    <h1 style="text-align:center">Welcome to the Game of Googol!</h1><br>
+    <p style="text-align:center"> <font size="4" Color="Blue"> The Game of Googol is a guessing game where you will have an amount of different numbers hiddden from you.<br> 
+    The goal is to reveal the highest number in the group of hidden numbers. The catch is, the last number you reveal has to be your "guess." <br>
+    This means that you can't go back to a number you revealed before. If you can successfully reveal the largest number in the group and stop revealing new ones, then you win! </font></p>
     <hr>
     <div id="centerDiv" style="text-align:center">
     <input type="button" id="playButton" value="Let's Play!" style="height:50px;width:100px" onclick="generateNumbers()"><br><br>
